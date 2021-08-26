@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour {
     public Inventory inventory;
-    
     private InventoryItem itemToPickup;
 
     private void Start() {
@@ -33,6 +32,7 @@ public class PlayerManager : MonoBehaviour {
         // temp for debugging
         Debug.Log("Added 1 " + item.type + " item to inventory!");
         inventory.AddItem(item, 1);
-        itemToPickup.OnPickup();
+        item.OnPickup();
+        itemToPickup = null;
     }
 }

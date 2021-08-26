@@ -11,22 +11,7 @@ public class Player : MonoBehaviour {
     public Sprite forwardSprite;
     public Sprite sideSprite;
 
-    public Inventory inventory;
-
-    private void Start() {
-        inventory = new Inventory();
-    }
-
-    void Update() {
-
-// input.mouseposition and input.getMouseButtonDown
-
-        if(Input.GetKeyDown(KeyCode.E) && itemToPickup != null) { 
-            Debug.Log("Added 1 " + itemToPickup.type + " item to inventory!");
-            inventory.AddItem(itemToPickup, 1);
-            itemToPickup.OnPickup();
-        }
-   }
+    void Update() { }
 
    private void FixedUpdate() {
         SetMovementFromInput();
@@ -49,25 +34,6 @@ public class Player : MonoBehaviour {
         float mx = Input.GetAxisRaw("Horizontal"); 
         float my = Input.GetAxisRaw("Vertical");
         movement = new Vector2(mx, my).normalized;
-    }
-
-
-    // ITEM PICKUP
-
-    private InventoryItem itemToPickup = null;
-    private void OnTriggerEnter2D(Collider2D other) {
-
-        InventoryItem item = other.GetComponent<InventoryItem>();
-        if (item != null) { 
-            itemToPickup = item;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other) {
-        InventoryItem item = other.GetComponent<InventoryItem>();
-        if (item != null) { 
-            itemToPickup = null;
-        }
     }
 
     

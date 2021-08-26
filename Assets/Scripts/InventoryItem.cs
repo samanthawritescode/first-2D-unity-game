@@ -5,7 +5,8 @@ using UnityEngine;
 public class InventoryItem : MonoBehaviour {
     public ItemType type;
     public enum ItemType { 
-        Rock, 
+        Rock,
+        Triangle
     }
 
     public void OnPickup() { 

@@ -16,6 +16,7 @@ public class Inventory {
             itemStore[item.type] += count;
         }
 
+        // temp for debugging
         PrintInventoryStatus();
     }
 

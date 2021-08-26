@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7078444819775220708}
   - component: {fileID: 6571063587738711515}
-  - component: {fileID: 9071498702603634845}
   - component: {fileID: 3314368054476546324}
   - component: {fileID: 6701956767743254732}
+  - component: {fileID: 9071498702603634845}
+  - component: {fileID: 7536173732973966655}
   m_Layer: 0
   m_Name: Rock Item
   m_TagString: Untagged
@@ -85,19 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9071498702603634845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8283533670420797319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c12b72656344949a8f46b7485d0e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
 --- !u!58 &3314368054476546324
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -130,3 +118,28 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.21875}
   serializedVersion: 2
   m_Radius: 0.25
+--- !u!114 &9071498702603634845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8283533670420797319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c12b72656344949a8f46b7485d0e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+--- !u!114 &7536173732973966655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8283533670420797319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dde77e82fc69f6448d3fcebe2d0014c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
